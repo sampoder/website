@@ -73,8 +73,9 @@ title: Home
                     <header></header>
                 </div>
                 <div class="clearfix"></div>
-            </div>
-            {% for experience in site.experience %}
+            </div>            
+            {% assign experience = site.experience | sort: 'rank' | reverse %}
+            {% for item in experience %}
             <div class="row d-xl-flex justify-content-xl-center align-items-xl-start" style="margin-bottom: 20px;">
                 <div class="col-md-6 col-xl-7">
                     <p style="margin-bottom: 0px;"><strong>{{ experience.title }}</strong><br></p>
