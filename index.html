@@ -123,82 +123,18 @@ title: Home
                 </div>
                 <div class="clearfix"></div>
             </div>
+            {% assign awards = site.awards | sort: 'rank' | reverse %}
+            {% for item in awards %}
             <div class="row d-xl-flex justify-content-xl-center align-items-xl-start" style="margin-bottom: 20px;">
                 <div class="col-md-6 col-xl-7">
-                    <p style="margin-bottom: 0px;"><strong>Mentor Award</strong><br></p>
-                    <p style="margin-bottom: 0px;">Apr. 2020 | Major League Hacking<br></p>
+                    <p style="margin-bottom: 0px;"><strong>{{ item.title }}</strong><br></p>
+                    <p style="margin-bottom: 0px;">{{ item.subtitle }}<br></p>
                     <hr>
-                    <p>Was one of two global community members recognised for extraordinary efforts to assist in mentoring and supporting hackers during Local Hack Day: Share 2020. This included answering technical questions, guiding others on how to
-                        make their project and interacting with the community.</p>
+                    <p>{{ item.content | markdownify }}</p>
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <div class="row d-xl-flex justify-content-xl-center align-items-xl-start" style="margin-bottom: 20px;">
-                <div class="col-md-6 col-xl-7">
-                    <p style="margin-bottom: 0px;"><strong>Multiple Awards&nbsp;</strong><br></p>
-                    <p style="margin-bottom: 0px;">Mar. to Nov. 2019 |&nbsp;World Scholars Cup<br></p>
-                    <hr>
-                    <p>Receive high recognition for my ability to debate, write and my factual knowledge. I won trophies in both debate and writing and placed in the top 5% for the individual challenge twice. In the 2019 season, I received 36 medals
-                        and 6 trophies.</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="row d-xl-flex justify-content-xl-center align-items-xl-start" style="margin-bottom: 20px;">
-                <div class="col-md-6 col-xl-7">
-                    <p style="margin-bottom: 0px;"><strong>Student of the Year</strong><br></p>
-                    <p>Jun. 2019 |&nbsp;GEMS World Academy Singapore<br></p>
-                    <hr>
-                    <p>Chosen as the best student from the entire school throughout the 2018 to 2019 academic year by the whole school faculty.<br><br>The process was based on the following criteria: consistent high achievements in all academic subjects,
-                        displaying the GEMS core values, displaying the IB learner profile attributes and being perceived by all (faculty and students) as a role model around the school.</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="row d-xl-flex justify-content-xl-center align-items-xl-start" style="margin-bottom: 20px;">
-                <div class="col-md-6 col-xl-7">
-                    <p style="margin-bottom: 0px;"><strong>Grade 8 Best Overall Student</strong><br></p>
-                    <p>Jun. 2019 |&nbsp;GEMS World Academy Singapore<br></p>
-                    <hr>
-                    <p>Chosen by all Grade 8 teachers as the best student in their view based on IB learner profiles and GEMS core values.</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="row d-xl-flex justify-content-xl-center align-items-xl-start" style="margin-bottom: 20px;">
-                <div class="col-md-6 col-xl-7">
-                    <p style="margin-bottom: 0px;"><strong>Grade 8 Science Fair Winner</strong><br></p>
-                    <p>Jun. 2019 |&nbsp;GEMS World Academy Singapore<br></p>
-                    <hr>
-                    <p>Made a wearable device that detects falls to help protect the elderly. Combined my computer science and physics knowledge to produce the project.</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="row d-xl-flex justify-content-xl-center align-items-xl-start" style="margin-bottom: 20px;">
-                <div class="col-md-6 col-xl-7">
-                    <p style="margin-bottom: 0px;"><strong>High Distinction Award</strong><br></p>
-                    <p style="margin-bottom: 0px;">May 2019 |&nbsp;Big Science Competition<br></p>
-                    <hr>
-                    <p>Applied scientific knowledge and thinking to solve scientific problems. The exam tests critical-thinking and problem-solving skills, not just factual recall.&nbsp;Questions are set in real-life and contemporary contexts.</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="row d-xl-flex justify-content-xl-center align-items-xl-start" style="margin-bottom: 20px;">
-                <div class="col-md-6 col-xl-7">
-                    <p style="margin-bottom: 0px;"><strong>Grand Champion</strong></p>
-                    <p style="margin-bottom: 0px;">Nov. 2018 |&nbsp;Young Founders Summit<br></p>
-                    <hr>
-                    <p>Young Founders Summit is a start-up competition for teenage (and pre-teen) founders. My team won the inaugural Young Founders Summit in South East Asia. We started a business that helped improve and monitor the cardiac health of
-                        the elderly (Cure Band).</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="row d-xl-flex justify-content-xl-center align-items-xl-start" style="margin-bottom: 20px;">
-                <div class="col-md-6 col-xl-7">
-                    <p style="margin-bottom: 0px;"><strong>Best Student in Technology</strong><br></p>
-                    <p style="margin-bottom: 0px;">Jun. 2018 |&nbsp;GEMS World Academy Singapore<br></p>
-                    <hr>
-                    <p>Recognised as the best student in the field of technology by the EdTech team for my contributions to improving the school environment through technology.&nbsp;</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
