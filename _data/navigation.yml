@@ -1,0 +1,9 @@
+items:
+  - link: /
+    name: Home
+  - link: /blog.html
+    name: Blog
+  - link: /staff.html
+    name: Staff
+  - link: /about.html
+    name: About
