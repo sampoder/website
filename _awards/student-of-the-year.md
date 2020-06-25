@@ -1,6 +1,6 @@
 ---
 layout: author
-rank: 2020-06-25T16:07:53.566Z
+rank: 2019-06-23T16:07:53.566Z
 title: Student of the Year
 subtitle: Jun. 2019 | GEMS World Academy Singapore
 ---
