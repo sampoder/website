@@ -1,0 +1,18 @@
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  experience:
+    output: true
+    sort_by: rank
+  awards:
+    output: true
+    sort_by: rank
+  extracurriculars:
+    output: true
+    sort_by: rank
+  news:
+    output: true
+    sort_by: rank
