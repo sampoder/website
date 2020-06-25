@@ -13,3 +13,6 @@ collections:
   extracurriculars:
     output: true
     sort_by: rank
+  news:
+    output: true
+    sort_by: rank
