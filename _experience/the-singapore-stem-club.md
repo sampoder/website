@@ -1,5 +1,6 @@
 ---
 layout: author
+rank: "3"
 title: CureIO (Fmr. Cure Band)
 subtitle: 2018 to 2019 | Founder & CTO
 ---
