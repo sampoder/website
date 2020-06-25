@@ -13,6 +13,7 @@ collections:
       preview: false
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "author" }
+      - { label: "Rank", name: "rank", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
