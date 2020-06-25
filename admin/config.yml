@@ -13,7 +13,7 @@ collections:
       preview: false
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "author" }
-      - { label: "Rank", name: "rank", widget: "string" }
+      - { label: "Date", name: "rank", widget: "datetime" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -25,7 +25,7 @@ collections:
       preview: false
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "author" }
-      - { label: "Rank", name: "rank", widget: "string" }
+      - { label: "Date", name: "rank", widget: "datetime" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -37,7 +37,7 @@ collections:
       preview: false
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "author" }
-      - { label: "Rank", name: "rank", widget: "string" }
+      - { label: "Date", name: "rank", widget: "datetime" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
