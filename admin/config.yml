@@ -5,38 +5,16 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: "assets/uploads"
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "_posts/"
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    editor:
-      preview: false
-    fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - {
-          label: "Author",
-          name: "author",
-          widget: "relation",
-          collection: "authors",
-          displayFields: [display_name],
-          searchFields: [display_name],
-          valueField: "name",
-        }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: "authors"
-    label: "Authors"
-    folder: "_authors/"
+  - name: "Experience"
+    label: "Experience"
+    folder: "_experience/"
     create: true
     editor:
       preview: false
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "author" }
-      - { label: "Short Name", name: "name", widget: "string" }
-      - { label: "Diplay Name", name: "display_name", widget: "string" }
-      - { label: "Position", name: "position", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pages"

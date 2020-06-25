@@ -74,13 +74,13 @@ title: Home
                 </div>
                 <div class="clearfix"></div>
             </div>
-            {% for author in site.authors %}
+            {% for experience in site.experience %}
             <div class="row d-xl-flex justify-content-xl-center align-items-xl-start" style="margin-bottom: 20px;">
                 <div class="col-md-6 col-xl-7">
-                    <p style="margin-bottom: 0px;"><strong>{{ author.display_name }}</strong><br></p>
-                    <p style="margin-bottom: 0px;">{{ author.position }}<br></p>
+                    <p style="margin-bottom: 0px;"><strong>{{ experience.title }}</strong><br></p>
+                    <p style="margin-bottom: 0px;">{{ experience.subtitle }}<br></p>
                     <hr>
-                    <p>{{ author.content | markdownify }}</p>
+                    <p>{{ experience.content | markdownify }}</p>
                 </div>
                 <div class="clearfix"></div>
             </div>
