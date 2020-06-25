@@ -1,5 +1,6 @@
 ---
 layout: author
+rank: "1"
 title: The Singapore STEM Club
 subtitle: 2020 to present | Founder
 ---
