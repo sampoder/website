@@ -6,6 +6,7 @@ plugins:
 collections:
   experience:
     output: true
+    sort_by: rank
 
 defaults:
   - scope:
