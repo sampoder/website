@@ -150,11 +150,10 @@ title: Home
             <div class="row d-xl-flex justify-content-xl-center align-items-xl-start" style="margin-bottom: 20px;">
                 <div class="col-md-6 col-xl-7">
                     <ul style="margin-left: -20px;">
-                        <li style="margin-bottom: 10px;"><a href="https://www.sassymamasg.com/learn-gems-world-academy-international-school-innovation-week/"><strong>How This Student Spearheaded Innovation Week at GWA Singapore</strong></a><br></li>
-                        <li style="margin-bottom: 10px;"><a href="https://expatliving.sg/gems-world-academy-international-school-singapore-innovation-week/"><strong>A Grade 9 student came up with the idea of an Innovation Week</strong></a><br></li>
-
-                        <li style="margin-bottom: 10px;"><a href="https://github.blog/2020-05-28-introducing-hack-clubs-summer-of-making/"><strong>Introducing Hack Club’s Summer of Making</strong></a><br></li>
-
+                        {% assign news = site.news | sort: 'rank' | reverse %}
+                        {% for item in news %}
+                        <li style="margin-bottom: 10px;"><a href="{{ item.url }}"><strong>{{ item.title }}</strong></a><br></li>
+                        {% endfor%}
                     </ul>
                 </div>
                 <div class="clearfix"></div>
