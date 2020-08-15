@@ -153,7 +153,7 @@ title: Sam Poder
                     <ul style="margin-left: -20px;">
                         {% assign news = site.news | sort: 'rank' | reverse %}
                         {% for item in news %}
-                        <li style="margin-bottom: 10px;"><a href="{{ item.url }}"><strong>{{ item.title }}</strong></a><br></li>
+                        <li style="margin-bottom: 10px;"><a href="{{ item.link }}"><strong>{{ item.title }}</strong></a><br></li>
                         {% endfor%}
                     </ul>
                 </div>
