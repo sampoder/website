@@ -51,4 +51,4 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "author" }
       - { label: "Date", name: "rank", widget: "datetime" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "URL", name: "url", widget: "string" }
+      - { label: "LINKK", name: "link", widget: "string" }
