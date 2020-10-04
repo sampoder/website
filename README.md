@@ -1,3 +1,0 @@
-# 🏡 website
-
-My personal site!
