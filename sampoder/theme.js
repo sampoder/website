@@ -91,7 +91,7 @@ export default {
       backgroundImage: 'linear-gradient(to right, #E1554C, #FFA526, #FFD426, #26DF7B, #268EFF, #716FDC)',
       backgroundClip: 'text',
       textFillColor: 'transparent',
-      WebkitBackgroundClip: 'text',
+      WebkitBackgroundClip: 'text', 
       WebkitTextFillColor: 'transparent',
       fontFamily: 'heading',
       lineHeight: 'heading',
