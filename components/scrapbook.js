@@ -391,7 +391,6 @@ const Post = ({
         ).map((img) => (
           <a
             key={img.url}
-            href={proxy(img.thumbnails?.full?.url || img.url)}
             target='_blank'
             title={img.filename}
             className='post-attachment'
