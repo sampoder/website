@@ -4,7 +4,7 @@ import { Fragment, memo, useState, useEffect, useRef } from 'react'
 import { filter, last, trim, startCase } from 'lodash'
 import Icon from '@hackclub/icons'
 import Hls from 'hls.js'
-
+import Image from 'next/image'
 const dt = (d) => new Date(d).toLocaleDateString()
 
 const year = new Date().getFullYear()
@@ -158,7 +158,7 @@ const StaticMention = memo(
   ({ user = {}, className = '', size = 24, children, ...props }) => (
     <a href={`/${user.username}`}>
       <a className={`mention ${className}`} {...props}>
-        <img
+        <Image
           src={user.avatar}
           alt={user.username}
           loading='lazy'
@@ -180,7 +180,7 @@ const EmojiImg = ({ name, ...props }) => (
       verticalAlign: 'middle'
     }}
   >
-    <img
+    <Image
       alt={name + ' emoji'}
       loading='lazy'
       className='post-emoji'
@@ -289,7 +289,7 @@ const Mention = memo(({ username }) => {
     <a href={`/${username}`}>
       <a className='mention post-text-mention'>
         {img && (
-          <img
+          <Image
             src={img}
             alt={username}
             loading='lazy'
@@ -361,7 +361,7 @@ const Post = ({
       <a href={`https://scrapbook.hackclub.com/${user.username}`}>
         <a className='post-header'>
           {user.avatar && (
-            <img
+            <Image
               loading='lazy'
               src={user.avatar}
               width={48}
@@ -395,7 +395,7 @@ const Post = ({
             title={img.filename}
             className='post-attachment'
           >
-            <img
+            <Image
               alt={img.filename}
               src={img.thumbnails?.large?.url || img.url}
               loading='lazy'

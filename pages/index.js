@@ -1,6 +1,7 @@
 import { Heading, Container, Box, Text } from 'theme-ui'
 import Scrapbook from '../components/scrapbook'
 import Tooltip from 'react-tooltip-lite'
+import Image from 'next/image'
 
 const App = props => (
   <Box as="main" pb={4} {...props} className="background">
@@ -8,7 +9,7 @@ const App = props => (
       sx={{
         background: [
           'linear-gradient(90deg, rgba(96,69,236,1) 0%, rgba(116,89,249,1) 100%, rgba(134,112,247,0.038252801120448154) 100%)',
-          'linear-gradient(90deg, rgba(96,69,236,1) 0%, rgba(116,89,249,1) 51%, rgba(134,112,247,0.038252801120448154) 100%), url("/design-bc5e9dda-e9a5-4ff3-9536-f78df446cecc.png"), black',
+          'linear-gradient(90deg, rgba(96,69,236,1) 0%, rgba(116,89,249,1) 51%, rgba(134,112,247,0.038252801120448154) 100%), url("/_next/image?url=/design-bc5e9dda-e9a5-4ff3-9536-f78df446cecc.png&w=640&q=75"), black',
         ],
         backgroundSize: '',
         backgroundPosition: ['top right', 'top right'],
@@ -16,16 +17,14 @@ const App = props => (
       }}
     >
       <Container py={5}>
-        <Box
-          as="img"
-          src="https://github.com/sampoder.png"
-          sx={{
-            width: '40%',
-            borderRadius: '8px',
-            marginBottom: '18px',
-            display: ['block', 'none'],
-          }}
-        />
+        <Box sx={{display: ['block', 'none']}}>
+        <div className="next-image-avatar">
+          <Image
+            src="https://github.com/sampoder.png"
+            width="150px"
+            height="150px"
+          />
+        </div></Box>
         <Heading sx={{ marginLeft: ['0px', '16px'], maxWidth: '90%' }}>
           My name is Sam and
         </Heading>
@@ -164,6 +163,13 @@ const App = props => (
       .tipContentClassName{
         padding-top: 24px;
         margin-top: 24px;
+      }
+      .next-image-avatar div img{
+        border-radius: 12px
+      }
+
+      .next-image-avatar{
+        margin-bottom: 16px;
       }
       `}
     </style>
