@@ -8,7 +8,7 @@ const ColorSwitcher = props => {
         position: 'absolute',
         top: [2, 3],
         right: [2, 3],
-        display: ['none!important', 'flex']
+        display: ['none!important', 'flex!important'],
       }}
     >
       <Box
