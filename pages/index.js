@@ -18,16 +18,14 @@ const App = props => (
       }}
     >
       <Container py={5}>
-        <Box
-          as="img"
-          src="https://github.com/sampoder.png"
-          sx={{
-            width: '40%',
-            borderRadius: '8px',
-            marginBottom: '18px',
-            display: ['block', 'none'],
-          }}
-        />
+        <Box sx={{display: ['block', 'none']}}>
+        <div className="next-image-avatar">
+          <Image
+            src="https://github.com/sampoder.png"
+            width="150px"
+            height="150px"
+          />
+        </div></Box>
         <Heading sx={{ marginLeft: ['0px', '16px'], maxWidth: '90%' }}>
           My name is Sam and
         </Heading>
