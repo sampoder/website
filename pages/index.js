@@ -1,5 +1,6 @@
 import { Heading, Container, Box, Text } from 'theme-ui'
 import Scrapbook from '../components/scrapbook'
+import Tooltip from 'react-tooltip-lite'
 
 const App = props => (
   <Box as="main" pb={4} {...props} className="background">
