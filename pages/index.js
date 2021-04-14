@@ -1,5 +1,7 @@
 import { Heading, Container, Box, Text } from 'theme-ui'
 import Scrapbook from '../components/scrapbook'
+import dynamic from 'next/dynamic'
+const Tooltip = dynamic(() => import('react-tooltip-lite'), { ssr: false })
 
 const App = props => (
   <Box as="main" pb={4} {...props} className="background">
@@ -61,29 +63,50 @@ const App = props => (
             marginLeft: ['0px', '16px'],
             fontWeight: '600',
             maxWidth: '76%',
+            width: 'fit-content',
           }}
         >
-          Here's what I've been up to recently{' '}
-          <Text
-            sx={{
-              fontSize: '0.6em',
-              verticalAlign: 'middle',
-              display: 'inline-block',
-              marginBottom: '4px',
-            }}
+          <Tooltip
+            mouseOutDelay={500}
+            content={
+              <>
+                Taken from my{' '}
+                <a
+                  href="https://scrapbook.hackclub.com"
+                  style={{ color: 'inherit' }}
+                >
+                  Hack Club Scrapbook
+                </a>
+                , a sharing platform I helped make!
+              </>
+            }
+            arrow={false}
+            direction="middle"
+            background="#151613"
+            tipContentClassName="tipContentClassName"
           >
-            ▼
-          </Text>
+            Here's what I've been up to recently{' '}
+            <Text
+              sx={{
+                fontSize: '0.6em',
+                verticalAlign: 'middle',
+                display: 'inline-block',
+                marginBottom: '4px',
+              }}
+            >
+              ▼
+            </Text>
+          </Tooltip>
         </Heading>
       </Container>
     </Box>
     <Container py={4}>
-      <Scrapbook
-        posts={props.initialData.posts}
-        hideReactions={true}
-        profile
-      />
+      <Scrapbook posts={props.initialData.posts} hideReactions={true} profile />
+      <Box py={2} sx={{ textAlign: 'center', fontWeight: '600' }}>
+        Wowza! You made it to the end. Thanks 🙌
+      </Box>
     </Container>
+
     <style>
       {`
       :root {
@@ -131,6 +154,17 @@ const App = props => (
       }
       .background{
         background: var(--colors-scrapbook-background);
+      }
+      .react-tooltip-lite{
+        margin-top: 6px;
+        border-radius: 12px;
+        padding-left: 24px!important;
+        padding-right: 24px!important;
+      }
+
+      .tipContentClassName{
+        padding-top: 24px;
+        margin-top: 24px;
       }
       `}
     </style>
