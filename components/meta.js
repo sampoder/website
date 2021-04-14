@@ -8,7 +8,7 @@ const Meta = ({
   title = 'Sam Poder', // page title
   name = 'Sam Poder', // site name
   description = `I'm experimenting, making things for people to enjoy and having fun!`, // page description
-  image = 'https://cloud-r8nx7y3h1-hack-club-bot.vercel.app/0screenshot_2021-04-13_at_10.47.58_pm.png', // social card image URL
+  image = 'https://cloud-fyymb4lxt-hack-club-bot.vercel.app/0screenshot_2021-04-13_at_10.47.58_pm-min.png', // social card image URL
   url = 'https://sampoder.com',
   children,
 }) => (
