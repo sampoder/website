@@ -2,113 +2,118 @@ import { Heading, Container, Box, Text } from 'theme-ui'
 import Scrapbook from '../components/scrapbook'
 import Tooltip from 'react-tooltip-lite'
 import Image from 'next/image'
+import useSWR from 'swr'
 
-const App = props => (
-  <Box as="main" pb={4} {...props} className="background">
-    <Box
-      sx={{
-        background: [
-          'linear-gradient(90deg, rgba(96,69,236,1) 0%, rgba(116,89,249,1) 100%, rgba(134,112,247,0.038252801120448154) 100%)',
-          'linear-gradient(90deg, rgba(96,69,236,1) 0%, rgba(116,89,249,1) 51%, rgba(134,112,247,0.038252801120448154) 100%), url("/_next/image?url=/design-bc5e9dda-e9a5-4ff3-9536-f78df446cecc.png&w=640&q=75"), black',
-        ],
-        backgroundSize: '',
-        backgroundPosition: ['top right', 'top right'],
-        minHeight: ['100vh', '20px'],
-        backgroundRepeat: ['no-repeat!important', 'no-repeat!important'],
-      }}
-    >
-      <Container py={[6, 5]}>
-        <Box sx={{ display: ['block', 'none'] }}>
-          <div className="next-image-avatar">
-            <Image
-              src="https://github.com/sampoder.png"
-              width="150px"
-              height="150px"
-            />
-          </div>
-        </Box>
-        <Heading sx={{ marginLeft: ['0px', '16px'], maxWidth: '90%' }}>
-          My name is Sam and
-        </Heading>
-        <Box>
+const App = props => {
+  const fetcher = (...args) => fetch(...args).then(res => res.json())
+  const { data, error } = useSWR('https://scrapbook.hackclub.com/api/users/sampoder', fetcher, { initialData: props.initialData})
+
+  return (
+    <Box as="main" pb={4} {...props} className="background">
+      <Box
+        sx={{
+          background: [
+            'linear-gradient(90deg, rgba(96,69,236,1) 0%, rgba(116,89,249,1) 100%, rgba(134,112,247,0.038252801120448154) 100%)',
+            'linear-gradient(90deg, rgba(96,69,236,1) 0%, rgba(116,89,249,1) 51%, rgba(134,112,247,0.038252801120448154) 100%), url("/_next/image?url=/design-bc5e9dda-e9a5-4ff3-9536-f78df446cecc.png&w=640&q=75"), black',
+          ],
+          backgroundSize: '',
+          backgroundPosition: ['top right', 'top right'],
+          minHeight: ['100vh', '20px'],
+          backgroundRepeat: ['no-repeat!important', 'no-repeat!important'],
+        }}
+      >
+        <Container py={[6, 5]}>
+          <Box sx={{ display: ['block', 'none'] }}>
+            <div className="next-image-avatar">
+              <Image
+                src="https://github.com/sampoder.png"
+                width="150px"
+                height="150px"
+              />
+            </div>
+          </Box>
+          <Heading sx={{ marginLeft: ['0px', '16px'], maxWidth: '90%' }}>
+            My name is Sam and
+          </Heading>
+          <Box>
+            <Heading
+              as="h1"
+              sx={{
+                fontSize: ['3em', '8em'],
+                textTransform: 'uppercase',
+                fontWeight: '800',
+              }}
+            >
+              I like to
+            </Heading>
+            <Heading
+              as="h1"
+              sx={{ fontSize: ['3.2em', '8em'], textTransform: 'uppercase' }}
+            >
+              <Text
+                as="span"
+                sx={{
+                  WebkitTextStroke: 'currentColor',
+                  WebkitTextStrokeWidth: ['2px', '3px'],
+                  WebkitTextFillColor: 'transparent',
+                }}
+              >
+                make
+              </Text>{' '}
+              stuff
+            </Heading>
+          </Box>
           <Heading
-            as="h1"
             sx={{
-              fontSize: ['3em', '8em'],
-              textTransform: 'uppercase',
-              fontWeight: '800',
+              marginLeft: ['0px', '16px'],
+              fontWeight: '600',
+              maxWidth: '76%',
+              width: 'fit-content',
             }}
           >
-            I like to
-          </Heading>
-          <Heading
-            as="h1"
-            sx={{ fontSize: ['3.2em', '8em'], textTransform: 'uppercase' }}
-          >
-            <Text
-              as="span"
-              sx={{
-                WebkitTextStroke: 'currentColor',
-                WebkitTextStrokeWidth: ['2px', '3px'],
-                WebkitTextFillColor: 'transparent',
-              }}
+            <Tooltip
+              mouseOutDelay={500}
+              content={
+                <>
+                  Taken from my{' '}
+                  <a
+                    href="https://scrapbook.hackclub.com"
+                    style={{ color: 'inherit' }}
+                  >
+                    Hack Club Scrapbook
+                  </a>
+                  , a sharing platform I helped make!
+                </>
+              }
+              arrow={false}
+              direction="middle"
+              background="#151613"
+              tipContentClassName="tipContentClassName"
             >
-              make
-            </Text>{' '}
-            stuff
+              Here's what I've been up to recently{' '}
+              <Text
+                sx={{
+                  fontSize: '0.6em',
+                  verticalAlign: 'middle',
+                  display: 'inline-block',
+                  marginBottom: '4px',
+                }}
+              >
+                ▼
+              </Text>
+            </Tooltip>
           </Heading>
-        </Box>
-        <Heading
-          sx={{
-            marginLeft: ['0px', '16px'],
-            fontWeight: '600',
-            maxWidth: '76%',
-            width: 'fit-content',
-          }}
-        >
-          <Tooltip
-            mouseOutDelay={500}
-            content={
-              <>
-                Taken from my{' '}
-                <a
-                  href="https://scrapbook.hackclub.com"
-                  style={{ color: 'inherit' }}
-                >
-                  Hack Club Scrapbook
-                </a>
-                , a sharing platform I helped make!
-              </>
-            }
-            arrow={false}
-            direction="middle"
-            background="#151613"
-            tipContentClassName="tipContentClassName"
-          >
-            Here's what I've been up to recently{' '}
-            <Text
-              sx={{
-                fontSize: '0.6em',
-                verticalAlign: 'middle',
-                display: 'inline-block',
-                marginBottom: '4px',
-              }}
-            >
-              ▼
-            </Text>
-          </Tooltip>
-        </Heading>
-      </Container>
-    </Box>
-    <Container py={4}>
-      <Scrapbook posts={props.initialData.posts} hideReactions={true} profile />
-      <Box py={2} sx={{ textAlign: 'center', fontWeight: '600' }}>
-        Wowza! You made it to the end. Thanks 🙌
+        </Container>
       </Box>
-    </Container>
+      <Container py={4}>
+        <Scrapbook posts={data.posts} hideReactions={true} profile />
+        <Box py={2} sx={{ textAlign: 'center', fontWeight: '600' }}>
+          Wowza! You made it to the end. Thanks 🙌
+        </Box>
+      </Container>
 
-    <style>
-      {`
+      <style>
+        {`
       :root {
         color-scheme: dark dark;
         --fonts-scrapbook-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont,
@@ -195,15 +200,19 @@ const App = props => (
 
       
       `}
-    </style>
-  </Box>
-)
+      </style>
+    </Box>
+  )
+}
 
 export const getStaticProps = async ({ params }) => {
   const initialData = await fetch(
     `https://scrapbook.hackclub.com/api/users/sampoder`,
   ).then(r => r.json())
-  return { props: { initialData }, revalidate: 1 }
+  return {
+    props: { initialData },
+    revalidate: 1,
+  }
 }
 
 export default App

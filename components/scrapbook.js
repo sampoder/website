@@ -5,17 +5,17 @@ import { filter, last, trim, startCase } from 'lodash'
 import Icon from '@hackclub/icons'
 import Hls from 'hls.js'
 import Image from 'next/image'
-const dt = (d) => new Date(d).toLocaleDateString()
+const dt = d => new Date(d).toLocaleDateString()
 
 const year = new Date().getFullYear()
-const tinyDt = (d) => dt(d).replace(`/${year}`, '').replace(`${year}-`, '')
+const tinyDt = d => dt(d).replace(`/${year}`, '').replace(`${year}-`, '')
 
 // based on https://github.com/withspectrum/spectrum/blob/alpha/src/helpers/utils.js#L146
 const timeSince = (
   previous,
   absoluteDuration = false,
   longForm = true,
-  current = new Date().toISOString()
+  current = new Date().toISOString(),
 ) => {
   const msPerMinute = 60 * 1000
   const msPerHour = msPerMinute * 60
@@ -71,9 +71,9 @@ const monthNames = [
   'September',
   'October',
   'November',
-  'December'
-].map((m) => m.substring(0, 3))
-const convertTimestampToDate = (timestamp) => {
+  'December',
+].map(m => m.substring(0, 3))
+const convertTimestampToDate = timestamp => {
   const isToday =
     new Date().toISOString().substring(0, 10) ===
     timestamp.toString().substring(0, 10)
@@ -98,17 +98,17 @@ const convertTimestampToDate = (timestamp) => {
     : `${week}, ${month} ${day}`
 }
 
-const proxy = (str) =>
+const proxy = str =>
   str
     ? str.replace(
         'https://dl.airtable.com/.attachmentThumbnails',
-        '/attachments'
+        '/attachments',
       ) + '/'
     : ''
 
 const dataDetector = /(<.+?\|?\S+>)|(@\S+)|(`{3}[\S\s]+`{3})|(`[^`]+`)|(_[^_]+_)|(\*[^\*]+\*)|(:[^ .,;`\u2013~!@#$%^&*(){}=\\:"<>?|A-Z]+:)/
 
-const formatText = (text) =>
+const formatText = text =>
   text.split(dataDetector).map((chunk, i) => {
     if (chunk?.startsWith(':') && chunk?.endsWith(':')) {
       return <CustomEmoji name={chunk} key={i} />
@@ -130,7 +130,7 @@ const formatText = (text) =>
         ?.replace(/https?:\/\//, '')
         .replace(/\/$/, '')
       return (
-        <a href={url} target='_blank' rel='noopener' key={i}>
+        <a href={url} target="_blank" rel="noopener" key={i}>
           {children}
         </a>
       )
@@ -151,39 +151,37 @@ const formatText = (text) =>
   })
 
 const Content = memo(({ children }) => (
-  <article className='post-text'>{formatText(children)}</article>
+  <article className="post-text">{formatText(children)}</article>
 ))
 
 const StaticMention = memo(
   ({ user = {}, className = '', size = 24, children, ...props }) => (
-    <a href={`/${user.username}`}>
-      <a className={`mention ${className}`} {...props}>
-        <Image
-          src={user.avatar}
-          alt={user.username}
-          loading='lazy'
-          width={size}
-          height={size}
-          className='mention-avatar'
-        />
-        @{user.username}
-        {children}
-      </a>
+    <a href={`/${user.username}`} className={`mention ${className}`} {...props}>
+      <Image
+        src={user.avatar}
+        alt={user.username}
+        loading="lazy"
+        width={size}
+        height={size}
+        className="mention-avatar"
+      />
+      @{user.username}
+      {children}
     </a>
-  )
+  ),
 )
 
 const EmojiImg = ({ name, ...props }) => (
   <div
     style={{
       height: !props.height ? '18px' : `${props.height}px`,
-      verticalAlign: 'middle'
+      verticalAlign: 'middle',
     }}
   >
     <Image
       alt={name + ' emoji'}
-      loading='lazy'
-      className='post-emoji'
+      loading="lazy"
+      className="post-emoji"
       width={18}
       height={18}
       {...props}
@@ -197,14 +195,14 @@ const CustomEmoji = memo(({ name }) => {
   useEffect(() => {
     try {
       fetch('https://scrapbook.hackclub.com/api/emoji/')
-        .then((r) => r.json())
-        .then((emojis) => {
+        .then(r => r.json())
+        .then(emojis => {
           if (emojis[emoji]) {
             setImage(emojis[emoji])
             return
           }
           setImage(
-            'https://emoji.slack-edge.com/T0266FRGM/parrot/c9f4fddc5e03d762.gif'
+            'https://emoji.slack-edge.com/T0266FRGM/parrot/c9f4fddc5e03d762.gif',
           )
         })
     } catch (e) {}
@@ -212,7 +210,7 @@ const CustomEmoji = memo(({ name }) => {
   return image ? <EmojiImg src={image} name={emoji} /> : <span>:{emoji}:</span>
 })
 
-const stripColons = (str) => {
+const stripColons = str => {
   const colonIndex = str.indexOf(':')
   if (colonIndex > -1) {
     // :emoji:
@@ -248,7 +246,7 @@ const Video = ({ mux, ...props }) => {
       hls.attachMedia(video)
     } else {
       console.error(
-        'This is an old browser that does not support MSE https://developer.mozilla.org/en-US/docs/Web/API/Media_Source_Extensions_API'
+        'This is an old browser that does not support MSE https://developer.mozilla.org/en-US/docs/Web/API/Media_Source_Extensions_API',
       )
     }
 
@@ -263,14 +261,14 @@ const Video = ({ mux, ...props }) => {
     <video
       ref={videoRef}
       poster={`https://image.mux.com/${mux}/thumbnail.jpg?width=512&fit_mode=pad&time=0`}
-      className='post-attachment'
+      className="post-attachment"
       id={mux}
       controls
       playsInline
       loop
-      preload='metadata'
-      onMouseOver={(e) => e.target.play()}
-      onMouseOut={(e) => e.target.pause()}
+      preload="metadata"
+      onMouseOver={e => e.target.play()}
+      onMouseOut={e => e.target.pause()}
       {...props}
     />
   )
@@ -281,21 +279,21 @@ const Mention = memo(({ username }) => {
   useEffect(() => {
     try {
       fetch(`https://scrapbook.hackclub.com/api/profiles/${trim(username)}/`)
-        .then((r) => r.json())
-        .then((profile) => setImg(profile.avatar))
+        .then(r => r.json())
+        .then(profile => setImg(profile.avatar))
     } catch (e) {}
   }, [])
   return (
     <a href={`/${username}`}>
-      <a className='mention post-text-mention'>
+      <a className="mention post-text-mention">
         {img && (
           <Image
             src={img}
             alt={username}
-            loading='lazy'
+            loading="lazy"
             width={24}
             height={24}
-            className='mention-avatar post-text-mention-avatar'
+            className="mention-avatar post-text-mention-avatar"
           />
         )}
         @{username}
@@ -306,14 +304,14 @@ const Mention = memo(({ username }) => {
 
 const Reaction = ({ name, char, url }) => (
   <a href={`https://scrapbook.hackclub.com/r/${name}`}>
-    <a className='post-reaction' title={startCase(name)}>
+    <a className="post-reaction" title={startCase(name)}>
       {url && (
         <EmojiImg
           src={url}
           name={name}
           width={24}
           height={24}
-          layout='responsive'
+          layout="responsive"
         />
       )}
       {char}
@@ -328,7 +326,7 @@ const Post = ({
     username: 'abc',
     avatar: '',
     displayStreak: false,
-    streakCount: 0
+    streakCount: 0,
   },
   text,
   attachments = [],
@@ -337,17 +335,17 @@ const Post = ({
   postedAt,
   hideReactions,
   slackUrl,
-  muted = false
+  muted = false,
 }) => (
   <section
-    className='post'
+    className="post"
     id={id}
     style={muted ? { opacity: muted, pointerEvents: 'none' } : null}
   >
     {profile || !user ? (
-      <header className='post-header'>
+      <header className="post-header">
         <time
-          className='post-header-date'
+          className="post-header-date"
           data-tip
           data-for={`tip-${id}`}
           dateTime={postedAt}
@@ -359,22 +357,22 @@ const Post = ({
       </header>
     ) : (
       <a href={`https://scrapbook.hackclub.com/${user.username}`}>
-        <a className='post-header'>
+        <a className="post-header">
           {user.avatar && (
             <Image
-              loading='lazy'
+              loading="lazy"
               src={user.avatar}
               width={48}
               height={48}
               alt={user.username}
-              className='post-header-avatar'
+              className="post-header-avatar"
             />
           )}
-          <section className='post-header-container'>
-            <span className='post-header-name'>
+          <section className="post-header-container">
+            <span className="post-header-name">
               <strong>@{user.username}</strong>
             </span>
-            <time className='post-header-date' dateTime={postedAt}>
+            <time className="post-header-date" dateTime={postedAt}>
               {postedAt?.startsWith('20')
                 ? convertTimestampToDate(postedAt)
                 : postedAt}
@@ -385,45 +383,45 @@ const Post = ({
     )}
     <Content>{text}</Content>
     {(attachments.length > 0 || mux.length > 0) && (
-      <div className='post-attachments'>
-        {filter(attachments, (a) =>
-          a?.type?.toString().startsWith('image')
-        ).map((img) => (
-          <a
-            key={img.url}
-            target='_blank'
-            title={img.filename}
-            className='post-attachment'
-          >
-            <Image
-              alt={img.filename}
-              src={img.thumbnails?.large?.url || img.url}
-              loading='lazy'
-              width={img.thumbnails?.large?.width}
-              height={img.thumbnails?.large?.height}
-              layout={!img.thumbnails?.large?.width ? 'fill' : null}
+      <div className="post-attachments">
+        {filter(attachments, a => a?.type?.toString().startsWith('image')).map(
+          img => (
+            <a
+              key={img.url}
+              target="_blank"
+              title={img.filename}
+              className="post-attachment"
+            >
+              <Image
+                alt={img.filename}
+                src={img.thumbnails?.large?.url || img.url}
+                loading="lazy"
+                width={img.thumbnails?.large?.width}
+                height={img.thumbnails?.large?.height}
+                layout={!img.thumbnails?.large?.width ? 'fill' : null}
+              />
+            </a>
+          ),
+        )}
+        {filter(attachments, a => a?.type?.toString().startsWith('audio')).map(
+          aud => (
+            <audio
+              key={aud.url}
+              className="post-attachment"
+              src={aud.url}
+              controls
+              preload="metadata"
             />
-          </a>
-        ))}
-        {filter(attachments, (a) =>
-          a?.type?.toString().startsWith('audio')
-        ).map((aud) => (
-          <audio
-            key={aud.url}
-            className='post-attachment'
-            src={aud.url}
-            controls
-            preload='metadata'
-          />
-        ))}
-        {mux.map((id) => (
+          ),
+        )}
+        {mux.map(id => (
           <Video key={id} mux={id} />
         ))}
       </div>
     )}
     {reactions.length > 0 && !profile && (
-      <footer className='post-reactions' aria-label='Emoji reactions'>
-        {reactions.map((reaction) => (
+      <footer className="post-reactions" aria-label="Emoji reactions">
+        {reactions.map(reaction => (
           <Reaction key={id + reaction.name} {...reaction} />
         ))}
       </footer>
@@ -431,35 +429,30 @@ const Post = ({
   </section>
 )
 
-const Posts = ({
-  posts = [],
-  colors = {},
-  fonts = {},
-  hideReactions
-}) => [
-  <div className='scrapbook-widget'>
+const Posts = ({ posts = [], colors = {}, fonts = {}, hideReactions }) => [
+  <div className="scrapbook-widget">
     <Masonry
-      key='masonry'
+      key="masonry"
       breakpointCols={{
         10000: 3,
         1024: 3,
         640: 2,
         480: 1,
-        default: 1
+        default: 1,
       }}
-      className='masonry-posts'
-      columnClassName='masonry-posts-column'
+      className="masonry-posts"
+      columnClassName="masonry-posts-column"
     >
-      {posts.map((post) =>
+      {posts.map(post =>
         hideReactions == true ? (
           <Post key={post.id} {...post} profile />
         ) : (
           <Post key={post.id} {...post} />
-        )
+        ),
       )}
     </Masonry>
   </div>,
-  <style jsx key='masonry-style'>{`
+  <style key="masonry-style">{`
     .masonry-posts {
       display: flex;
       width: 100%;
@@ -548,10 +541,10 @@ const Posts = ({
       --colors-scrapbook-progress: var(--colors-scrapbook-red);
 
       ${Object.keys(colors)
-        .map((x) => `--colors-scrapbook-${x}: ${colors[x]};`)
+        .map(x => `--colors-scrapbook-${x}: ${colors[x]};`)
         .join('')}
       ${Object.keys(fonts)
-        .map((x) => `--fonts-scrapbook-${x}: ${fonts[x]};`)
+        .map(x => `--fonts-scrapbook-${x}: ${fonts[x]};`)
         .join('')}
     }
 
@@ -819,7 +812,7 @@ const Posts = ({
         U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
         U+2212, U+2215, U+FEFF, U+FFFD;
     }
-  `}</style>
+  `}</style>,
 ]
 
 export default Posts

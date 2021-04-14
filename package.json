@@ -21,6 +21,7 @@
     "react-masonry-css": "^1.0.16",
     "react-tooltip": "^4.2.17",
     "react-tooltip-lite": "^1.12.0",
+    "swr": "^0.5.5",
     "theme-ui": "^0.6.0-alpha.7"
   }
 }
