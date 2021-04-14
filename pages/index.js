@@ -13,6 +13,7 @@ const App = props => (
         ],
         backgroundSize: '',
         backgroundPosition: ['top right', 'top right'],
+        minHeight: ['100vh', '20px'],
         backgroundRepeat: ['no-repeat!important', 'no-repeat!important'],
       }}
     >
