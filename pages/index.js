@@ -129,8 +129,8 @@ const App = props => (
           --colors-scrapbook-sunken: var(--colors-scrapbook-darker);
         }
       }
-      '.background{
-        background: var(--colors-scrapbook-background)
+      .background{
+        background: var(--colors-scrapbook-background);
       }
       `}
     </style>
