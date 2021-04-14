@@ -17,15 +17,16 @@ const App = props => (
         backgroundRepeat: ['no-repeat!important', 'no-repeat!important'],
       }}
     >
-      <Container py={5}>
-        <Box sx={{display: ['block', 'none']}}>
-        <div className="next-image-avatar">
-          <Image
-            src="https://github.com/sampoder.png"
-            width="150px"
-            height="150px"
-          />
-        </div></Box>
+      <Container py={[6, 5]}>
+        <Box sx={{ display: ['block', 'none'] }}>
+          <div className="next-image-avatar">
+            <Image
+              src="https://github.com/sampoder.png"
+              width="150px"
+              height="150px"
+            />
+          </div>
+        </Box>
         <Heading sx={{ marginLeft: ['0px', '16px'], maxWidth: '90%' }}>
           My name is Sam and
         </Heading>
@@ -172,6 +173,27 @@ const App = props => (
       .next-image-avatar{
         margin-bottom: 16px;
       }
+      @media screen and (max-width: 350px) {
+        .css-ihgjy8 {
+          box-sizing: border-box;
+          margin: 0;
+          min-width: 0;
+          width: 100%;
+          max-width: container;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1024px;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          padding-left: 16px;
+          padding-right: 16px;
+          padding-top: 64px;
+          padding-bottom: 64px;
+          }
+      }
+
+      
       `}
     </style>
   </Box>
