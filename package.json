@@ -1,7 +1,7 @@
 {
-  "name": "@lachlanjc/theme-starter",
+  "name": "website",
   "version": "0.0.1",
-  "author": "Lachlan Campbell (https://lachlanjc.com) <lachlanjc@hey.com>",
+  "author": "Sam Poder",
   "license": "MIT",
   "private": true,
   "scripts": {
