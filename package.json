@@ -13,15 +13,15 @@
     "@hackclub/icons": "^0.0.9",
     "@mdx-js/loader": "^1.6.22",
     "hls.js": "^1.0.6",
-    "@next/mdx": "^10.2.2",
+    "@next/mdx": "^10.2.3",
     "lodash": "^4.17.21",
-    "next": "^10.2.2",
+    "next": "^10.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-masonry-css": "^1.0.16",
-    "react-tooltip": "^4.2.18",
+    "react-tooltip": "^4.2.21",
     "react-tooltip-lite": "^1.12.0",
     "swr": "^0.5.6",
-    "theme-ui": "^0.8.4"
+    "theme-ui": "^0.9.1"
   }
 }
