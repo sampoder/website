@@ -7,6 +7,18 @@ import Hls from 'hls.js'
 import Image from 'next/image'
 const dt = d => new Date(d).toLocaleDateString()
 
+function endsWithAny(suffixes, string) {
+  try{
+    return suffixes.some(function (suffix) {
+      return string.endsWith(suffix)
+    })
+  }
+  catch{
+    return false
+  }
+}
+
+
 const year = new Date().getFullYear()
 const tinyDt = d => dt(d).replace(`/${year}`, '').replace(`${year}-`, '')
 
