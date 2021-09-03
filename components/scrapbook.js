@@ -7,6 +7,10 @@ import Hls from 'hls.js'
 import Image from 'next/image'
 const dt = d => new Date(d).toLocaleDateString()
 
+const imageFileTypes = ['jpg', 'jpeg', 'png', 'gif']
+
+const audioFileTypes = ['mp3', 'wav', 'aiff', 'm4a']
+
 function endsWithAny(suffixes, string) {
   try{
     return suffixes.some(function (suffix) {
