@@ -23,20 +23,12 @@ const Meta = ({
       name="twitter:title"
       content={makeTitle(title, name)}
     />
-    {description && (
-      <>
-        <meta key="desc" name="description" content={description} />
-        <meta key="og_desc" property="og:description" content={description} />
-        <meta key="tw_desc" name="twitter:description" content={description} />
-      </>
-    )}
-    {image && (
-      <>
-        <meta key="og_img" property="og:image" content={image} />
-        <meta key="tw_card" name="twitter:card" content="summary_large_image" />
-        <meta key="tw_img" name="twitter:image" content={image} />
-      </>
-    )}
+    <meta key="desc" name="description" content={description} />
+    <meta key="og_desc" property="og:description" content={description} />
+    <meta key="tw_desc" name="twitter:description" content={description} />  
+    <meta key="og_img" property="og:image" content={image} />
+    <meta key="tw_card" name="twitter:card" content="summary_large_image" />
+    <meta key="tw_img" name="twitter:image" content={image} />
     <meta key="theme_color" name="theme-color" content={theme.colors.primary} />
     <meta
       key="tile_color"
