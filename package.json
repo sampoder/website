@@ -12,7 +12,7 @@
   "dependencies": {
     "@hackclub/icons": "^0.0.9",
     "@mdx-js/loader": "^1.6.22",
-    "hls.js": "^1.0.6",
+    "hls.js": "^1.0.12",
     "@next/mdx": "^10.2.3",
     "lodash": "^4.17.21",
     "next": "^10.2.3",
