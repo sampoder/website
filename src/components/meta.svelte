@@ -3,7 +3,7 @@
 	let name = 'Sam Poder'; // site name
 	let description = `I'm experimenting, making things for people to enjoy and having fun!`; // page description
 	let image =
-		'https://cloud-fyymb4lxt-hack-club-bot.vercel.app/0screenshot_2021-04-13_at_10.47.58_pm-min.png'; // social card image URL
+		'https://sampoder.com/pfp.jpg'; // social card image URL
 	const makeTitle = (title, name) => (title === name ? title : `${title} – ${name}`);
 </script>
 

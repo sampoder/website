@@ -82,7 +82,12 @@
 		</div>
 	{/each}
 	You seem to have reached the end...
-	<span class="load-more" on:click={handleClick}>load more</span>?
+	{#if amount < items.length}
+		<span class="load-more" on:click={handleClick}>show more</span>?
+	{:else}
+		have a great day :D
+	{/if}
+	
 </section>
 
 <style>
@@ -143,6 +148,7 @@
 
 	.load-more {
 		text-decoration: underline;
+		cursor: pointer;
 	}
 
 	a {
