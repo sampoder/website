@@ -1,6 +1,13 @@
-.vercel
-.next
-node_modules
 .DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
 .env
+<<<<<<< HEAD
 .svelte-kit
+=======
+.env.*
+.vercel
+.output
+>>>>>>> 050cc3ba31298a4c884d99dda29a2a180ee4339c
