@@ -9,6 +9,23 @@
     "build": "next build",
     "start": "next start"
   },
+<<<<<<< Updated upstream
+=======
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-vercel": "next",
+    "@sveltejs/kit": "next",
+    "@types/cookie": "^0.4.1",
+    "prettier": "^2.4.1",
+    "prettier-plugin-svelte": "^2.4.0",
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.2.6",
+    "svelte-preprocess": "^4.9.4",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3"
+  },
+  "type": "module",
+>>>>>>> Stashed changes
   "dependencies": {
     "@hackclub/icons": "^0.0.9",
     "@mdx-js/loader": "^1.6.22",
