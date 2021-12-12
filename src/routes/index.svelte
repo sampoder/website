@@ -36,11 +36,7 @@
 	function handleClick() {
 		amount += 10;
 	}
-<<<<<<< HEAD
-</script> hi
-=======
 </script>
->>>>>>> 050cc3ba31298a4c884d99dda29a2a180ee4339c
 
 <Meta />
 
