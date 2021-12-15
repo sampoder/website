@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	export const prerender = true;
+	export const prerender = false;
 	export async function load({ fetch }) {
 		let res = await fetch('https://scrapbook.hackclub.com/api/users/sampoder/');
 		if (res.ok) {
