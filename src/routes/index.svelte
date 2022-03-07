@@ -59,7 +59,7 @@
 		<a href="https://scrapbook.hackclub.com/about/" target="_blank">Scrapbook</a>):
 	</p>
 	{#each items.slice(0, amount) as item}
-		<div>
+		<div style="display: none;">
 			<p><b>{convertTimestampToDate(item?.postedAt)}</b></p>
 			<p>{@html formatText(item?.text)}</p>
 			<p class="attachments">
