@@ -53,7 +53,7 @@
 		<a href="https://instagram.com/sam_poder/" target="_blank">Instagram</a>
 	</p>
 	<p>
-		👋 G'day! My name is Sam and I'm an Australian secondary school student (first year of IB at the
+		👋 G'day! My name is Sam and I'm an Australian secondary school student (second year of IB at the
 		moment) living in Singapore. I enjoy making things (mostly involving code) and learning about
 		random pieces of trivia. Here's what I've been up to recently (from my 
 		<a href="https://scrapbook.hackclub.com/about/" target="_blank">Scrapbook</a>):
