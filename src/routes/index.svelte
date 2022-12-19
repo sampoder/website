@@ -58,9 +58,6 @@
 		random pieces of trivia. Here's what I've been up to recently (from my 
 		<a href="https://scrapbook.hackclub.com/about/" target="_blank">Scrapbook</a>):
 	</p>
-	<p>
-		<small>Teenager in Singapore? Sign up for <a href="https://lioncityhacks.com/">🦁 Lion City Hacks</a>!</small>
-	</p>
 	{#each items.slice(0, amount) as item}
 		<div>
 			<p><b>{convertTimestampToDate(item?.postedAt)}</b></p>
@@ -156,9 +153,5 @@
 
 	a {
 		color: black !important;
-	}
-	
-	small {
-		opacity: 0.7;
 	}
 </style>
