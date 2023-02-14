@@ -50,7 +50,8 @@
 	<p>
 		<a href="https://github.com/sampoder" target="_blank">GitHub</a> ~
 		<a href="https://twitter.com/sam_poder" target="_blank">Twitter</a> ~
-		<a href="https://instagram.com/sam_poder/" target="_blank">Instagram</a>
+		<a href="https://instagram.com/sam_poder/" target="_blank">Instagram</a> ~
+		<a href="https://social.dino.icu/@sampoder" target="_blank" rel="me">Mastodon</a>
 	</p>
 	<p>
 		👋 G'day! My name is Sam and I'm an Australian secondary school student (second year of IB at the
