@@ -65,13 +65,17 @@
 	<p>
 		Here's are a couple of projects I'm proud of:
 	</p>
+	<p>
 		<iframe 
+			height="350"
 			src="https://www.youtube.com/embed/KLx4NZZPzMc" 
 			title="YouTube video player" 
 			frameborder="0" 
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 			allowfullscreen
+			style="border-radius: 4px; width: 100%;"
 		></iframe>
+	</p>
 	<p>
 		Here's what I've been up to recently (from my 
 		<a href="https://scrapbook.hackclub.com/about/" target="_blank">Scrapbook</a>):
