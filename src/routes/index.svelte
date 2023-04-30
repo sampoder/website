@@ -40,7 +40,7 @@
 
 <Meta />
 
-<section>
+<section style="margin-top: 72px;">
 	<div class="photo-and-name">
 		<img src="/pfp.jpg" alt="Me (Sam Poder)" />
 		<div>
@@ -65,61 +65,132 @@
 	<p>
 		Here's are a couple of projects I'm proud of:
 	</p>
-	<p>
-		<iframe 
-			height="350"
-			src="https://www.youtube.com/embed/KLx4NZZPzMc" 
-			title="YouTube video player" 
-			frameborder="0" 
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-			allowfullscreen
-			style="border-radius: 4px; width: 100%;"
-		></iframe>
-	</p>
-	<p>
-		<iframe 
-			height="350"
-			src="https://www.youtube.com/embed/PnK4gzO6S3Q" 
-			title="YouTube video player" 
-			frameborder="0" 
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-			allowfullscreen
-			style="border-radius: 4px; width: 100%;"
-		></iframe>
-	</p>
-	<p>
-		<iframe 
-			height="350"
-			src="https://www.youtube.com/embed/afwQkr5UHpE" 
-			title="YouTube video player" 
-			frameborder="0" 
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-			allowfullscreen
-			style="border-radius: 4px; width: 100%;"
-		></iframe>
-	</p>
-	<p>
-		<iframe 
-			height="350"
-			src="https://www.youtube.com/embed/afwQkr5UHpE" 
-			title="YouTube video player" 
-			frameborder="0" 
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-			allowfullscreen
-			style="border-radius: 4px; width: 100%;"
-		></iframe>
-	</p>
-	<p>
-		<iframe 
-			height="350"
-			src="https://www.youtube.com/embed/61iu_7Zdmus" 
-			title="YouTube video player" 
-			frameborder="0" 
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-			allowfullscreen
-			style="border-radius: 4px; width: 100%;"
-		></iframe>
-	</p>
+</section>
+<div class="grid-2">
+	<iframe 
+		height="300"
+		src="https://www.youtube.com/embed/KLx4NZZPzMc" 
+		title="YouTube video player" 
+		frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		allowfullscreen
+		style="border-radius: 8px; width: 100%;"
+	></iframe>
+	<iframe 
+		height="300"
+		src="https://www.youtube.com/embed/PnK4gzO6S3Q" 
+		title="YouTube video player" 
+		frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		allowfullscreen
+		style="border-radius: 8px; width: 100%;"
+	></iframe>
+	<iframe 
+		height="300"
+		src="https://www.youtube.com/embed/afwQkr5UHpE" 
+		title="YouTube video player" 
+		frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		allowfullscreen
+		style="border-radius: 8px; width: 100%;"
+	></iframe>
+	<iframe 
+		height="300"
+		src="https://www.youtube.com/embed/61iu_7Zdmus" 
+		title="YouTube video player" 
+		frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		allowfullscreen
+		style="border-radius: 8px; width: 100%;"
+	></iframe>
+</div>
+<div class="grid-3">
+	<div class="repo-container">
+	  <div class="repo-header">
+		<a href="#" class="repo-name">hackclub<b>/hackclub</b></a>
+	  </div>
+	  <p class="repo-description">
+	  	🌎 Hack Club is a worldwide community of high school hackers.
+	  </p>
+	  <div class="repo-stats">
+		<div class="repo-language">
+		  <span class="language-color javascript"></span>
+		  <span class="language-name">JavaScript</span>
+		</div>
+	  </div>
+	</div>
+	<div class="repo-container">
+	  <div class="repo-header">
+		<a href="#" class="repo-name"><b>berowra</b></a>
+	  </div>
+	  <p class="repo-description">
+		  🔵 An open source CMS built for hackers and hobbyists.
+	  </p>
+	  <div class="repo-stats">
+		<div class="repo-language">
+		  <span class="language-color python"></span>
+		  <span class="language-name">Python</span>
+		</div>
+	  </div>
+	</div>
+	<div class="repo-container">
+	  <div class="repo-header">
+		<a href="#" class="repo-name">hackclub<b>/scrapbook</b></a>
+	  </div>
+	  <p class="repo-description">
+		  🔥 A daily streak system & portfolio for your projects.
+	  </p>
+	  <div class="repo-stats">
+		<div class="repo-language">
+		  <span class="language-color javascript"></span>
+		  <span class="language-name">JavaScript</span>
+		</div>
+	  </div>
+	</div>
+	<div class="repo-container">
+	  <div class="repo-header">
+		<a href="#" class="repo-name"><b>climatator</b></a>
+	  </div>
+	  <p class="repo-description">
+		  🌏 A 4D multimedia experience showcasing the upcoming challenges caused by global warming.
+	  </p>
+	  <div class="repo-stats">
+		<div class="repo-language">
+		  <span class="language-color python"></span>
+		  <span class="language-name">Python</span>
+		</div>
+	  </div>
+	</div>
+	<div class="repo-container">
+	  <div class="repo-header">
+		<a href="#" class="repo-name"><b>sound-festival</b></a>
+	  </div>
+	  <p class="repo-description">
+		  🎶 An interactive sound festival built for Innovation Week 2021 (built using Sonic Pi).
+	  </p>
+	  <div class="repo-stats">
+		<div class="repo-language">
+		  <span class="language-color ruby"></span>
+		  <span class="language-name">Ruby</span>
+		</div>
+	  </div>
+	</div>
+	<div class="repo-container">
+	  <div class="repo-header">
+		<a href="#" class="repo-name">hackclub<b>/assemble</b></a>
+	  </div>
+	  <p class="repo-description">
+		  🌁 The behind-the-scenes of the first high school hackathon since the pandemic!
+	  </p>
+	  <div class="repo-stats">
+		<div class="repo-language">
+		  <span class="language-color assembly"></span>
+		  <span class="language-name">Assembly</span>
+		</div>
+	  </div>
+	</div>
+</div>
+<section style="margin-top: 36px;">
 	<p>
 		Here's what I've been up to recently (from my 
 		<a href="https://scrapbook.hackclub.com/about/" target="_blank">Scrapbook</a>):
@@ -161,7 +232,25 @@
 		width: 100%;
 		max-width: 600px;
 		margin: auto;
-		margin-top: 72px;
+	}
+	
+	.grid-2 {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  gap: 16px;
+	  margin-bottom: 16px;
+	}
+	
+	.grid-3 {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr 1fr;
+	  gap: 8px;
+	}
+	
+	@media screen and (max-width: 768px) {
+	  .grid-2, .grid-3 {
+		grid-template-columns: 1fr;
+	  }
 	}
 
 	.photo-and-name {
@@ -220,4 +309,121 @@
 	a {
 		color: black !important;
 	}
+	
+	.repo-container {
+	  border: 1px solid #e1e4e8;
+	  border-radius: 8px;
+	  margin-bottom: 0px;
+	  padding: 16px;
+	}
+	
+	.repo-header {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  margin-bottom: 8px;
+	}
+	
+	.repo-name {
+	  font-size: 16px;
+	  color: #2f81f7!important;
+	  text-decoration: none;
+	}
+	
+	b {
+		font-weight: 600;
+	}
+	
+	.repo-description {
+	  color: #586069;
+	  font-size: 14px;
+	  margin-bottom: 8px;
+	}
+	
+	.repo-stats {
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	  font-size: 12px;
+	  color: #586069;
+	}
+	
+	.repo-stats span {
+	  margin-right: 8px;
+	}
+	
+	.repo-language {
+	  display: flex;
+	  align-items: center;
+	}
+	
+	.language-color {
+	  display: inline-block;
+	  width: 12px;
+	  height: 12px;
+	  border-radius: 50%;
+	  margin-right: 8px;
+	}
+	
+	.language-name {
+	  color: #586069;
+	}
+	
+	.repo-forks {
+	  color: #586069;
+	}
+	
+	.repo-stars {
+	  color: #586069;
+	}
+	
+	.repo-updated {
+	  color: #586069;
+	}
+	
+	.language-color.html {
+	  background-color: #e34c26;
+	}
+	
+	.language-color.css {
+	  background-color: #563d7c;
+	}
+	
+	.language-color.javascript {
+	  background-color: #f1e05a;
+	}
+	
+	.language-color.python {
+	  background-color: #3572a5;
+	}
+	
+	.language-color.java {
+	  background-color: #b07219;
+	}
+	
+	.language-color.ruby {
+	  background-color: #701516;
+	}
+	
+	.language-color.php {
+	  background-color: #4f5d95;
+	}
+	
+	.language-color.c {
+	  background-color: #555555;
+	}
+	
+	.language-color.csharp {
+	  background-color: #178600;
+	}
+	
+	.language-color.cplusplus {
+	  background-color: #f34b7d;
+	}
+	
+	.language-color.assembly {
+	  background-color: #6E4C13;
+	}
+
+	
 </style>
