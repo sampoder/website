@@ -55,9 +55,12 @@
 	</p>
 	<p>
 		👋 G'day! My name is Sam and I'm an Australian secondary school student (second year of IB at the
-		moment) living in Singapore. I enjoy making things (mostly involving code), running 
+		moment) living in Singapore. In August, I'll be moving to the Bay Area to study Computer Science at UC Berkeley!
+	</p>
+	<p>
+		I enjoy making things (mostly involving code), running 
 		<a href="https://www.youtube.com/watch?v=PnK4gzO6S3Q" target="_blank">hac</a><a href="https://lioncityhacks.com/" target="_blank">kat</a><a href="https://photos.app.goo.gl/pd5MprLVn7ZDixv17" target="_blank">ho</a><a href="https://youtu.be/KLx4NZZPzMc" target="_blank">ns</a> 
-		and learning about random pieces of trivia. In August, I'll be moving to the Bay Area to study Computer Science at UC Berkeley!
+		and learning about random pieces of trivia. 
 	</p>
 	<p>
 		Here's what I've been up to recently (from my 
