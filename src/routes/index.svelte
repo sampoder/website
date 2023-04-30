@@ -77,6 +77,50 @@
 		></iframe>
 	</p>
 	<p>
+		<iframe 
+			height="350"
+			src="https://www.youtube.com/embed/PnK4gzO6S3Q" 
+			title="YouTube video player" 
+			frameborder="0" 
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+			allowfullscreen
+			style="border-radius: 4px; width: 100%;"
+		></iframe>
+	</p>
+	<p>
+		<iframe 
+			height="350"
+			src="https://www.youtube.com/embed/afwQkr5UHpE" 
+			title="YouTube video player" 
+			frameborder="0" 
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+			allowfullscreen
+			style="border-radius: 4px; width: 100%;"
+		></iframe>
+	</p>
+	<p>
+		<iframe 
+			height="350"
+			src="https://www.youtube.com/embed/afwQkr5UHpE" 
+			title="YouTube video player" 
+			frameborder="0" 
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+			allowfullscreen
+			style="border-radius: 4px; width: 100%;"
+		></iframe>
+	</p>
+	<p>
+		<iframe 
+			height="350"
+			src="https://www.youtube.com/embed/61iu_7Zdmus" 
+			title="YouTube video player" 
+			frameborder="0" 
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+			allowfullscreen
+			style="border-radius: 4px; width: 100%;"
+		></iframe>
+	</p>
+	<p>
 		Here's what I've been up to recently (from my 
 		<a href="https://scrapbook.hackclub.com/about/" target="_blank">Scrapbook</a>):
 	</p>
