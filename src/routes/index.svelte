@@ -107,7 +107,7 @@
 <div class="grid-3">
 	<div class="repo-container">
 	  <div class="repo-header">
-		<a href="#" class="repo-name">hackclub<b>/hackclub</b></a>
+		<a href="https://github.com/hackclub/hackclub" class="repo-name">hackclub<b>/hackclub</b></a>
 	  </div>
 	  <p class="repo-description">
 	  	🌎 Hack Club is a worldwide community of high school hackers.
@@ -121,7 +121,7 @@
 	</div>
 	<div class="repo-container">
 	  <div class="repo-header">
-		<a href="#" class="repo-name"><b>berowra</b></a>
+		<a href="https://github.com/sampoder/berowra" class="repo-name"><b>berowra</b></a>
 	  </div>
 	  <p class="repo-description">
 		  🔵 An open source CMS built for hackers and hobbyists.
@@ -135,7 +135,7 @@
 	</div>
 	<div class="repo-container">
 	  <div class="repo-header">
-		<a href="#" class="repo-name">hackclub<b>/scrapbook</b></a>
+		<a href="https://github.com/hackclub/scrapbook" class="repo-name">hackclub<b>/scrapbook</b></a>
 	  </div>
 	  <p class="repo-description">
 		  🔥 A daily streak system & portfolio for your projects.
@@ -149,7 +149,7 @@
 	</div>
 	<div class="repo-container">
 	  <div class="repo-header">
-		<a href="#" class="repo-name"><b>climatator</b></a>
+		<a href="https://github.com/sampoder/climatator" class="repo-name"><b>climatator</b></a>
 	  </div>
 	  <p class="repo-description">
 		  🌏 A 4D multimedia experience showcasing the upcoming challenges caused by global warming.
@@ -163,7 +163,7 @@
 	</div>
 	<div class="repo-container">
 	  <div class="repo-header">
-		<a href="#" class="repo-name"><b>sound-festival</b></a>
+		<a href="https://github.com/sampoder/sound-festival" class="repo-name"><b>sound-festival</b></a>
 	  </div>
 	  <p class="repo-description">
 		  🎶 An interactive sound festival built for Innovation Week 2021 (built using Sonic Pi).
@@ -177,7 +177,7 @@
 	</div>
 	<div class="repo-container">
 	  <div class="repo-header">
-		<a href="#" class="repo-name">hackclub<b>/assemble</b></a>
+		<a href="https://github.com/hackclub/assemble" class="repo-name">hackclub<b>/assemble</b></a>
 	  </div>
 	  <p class="repo-description">
 		  🌁 The behind-the-scenes of the first high school hackathon since the pandemic!
