@@ -54,8 +54,7 @@
 		<a href="https://social.dino.icu/@sampoder" target="_blank" rel="me">Mastodon</a>
 	</p>
 	<p>
-		👋 G'day! My name is Sam and I'm an Australian secondary school student (second year of IB at the
-		moment) living in Singapore. In August, I'll be moving to the Bay Area to study Computer Science at UC Berkeley!
+		👋 G'day! My name is Sam. I'm an Australian who grew up in Singapore but am now living in the United States and learning all about computers at Berkeley. <i>Hack yeah!</i>
 	</p>
 	<p>
 		I enjoy making things (mostly involving code), running 
