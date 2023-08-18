@@ -54,7 +54,7 @@
 		<a href="https://social.dino.icu/@sampoder" target="_blank" rel="me">Mastodon</a>
 	</p>
 	<p>
-		👋 G'day! My name is Sam. I'm an Australian who grew up in Singapore but am now living in the United States and learning all about computers at Berkeley. <i>Hack yeah!</i>
+		👋 G'day! My name is Sam. I'm an Australian who grew up in Singapore; nowadays, I'm living in the United States and learning all about computers at Berkeley. <i>Hack yeah!</i>
 	</p>
 	<p>
 		I enjoy making things (mostly involving code), running 
