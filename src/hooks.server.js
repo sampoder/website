@@ -1,4 +1,4 @@
-async handle({ request, resolve }) {
+export async function handle({ request, resolve }) {
 	const referer = request.headers.referer || '';
 	console.log(referer)
 	const refererHost = new URL(referer).hostname;
