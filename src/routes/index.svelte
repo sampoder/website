@@ -54,11 +54,11 @@
 		<a href="https://social.dino.icu/@sampoder" target="_blank" rel="me">Mastodon</a>
 	</p>
 	<p>
-		👋 G'day! My name is Sam. I'm an Australian who grew up in Singapore; nowadays, I'm living in the United States and learning all about computers at Berkeley. <i>Hack yeah!</i>
+		👋 G'day! My name is Sam. I'm an Australian who grew up in Singapore; nowadays, I'm living in the United States and learning all about computers at Berkeley. <i>{["Go bears!", "Roll on you bears!", "Hack yeah!"][Math.floor(Math.random() * 3)]}</i>
 	</p>
 	<p>
 		I enjoy making things (mostly involving code), running 
-		<a href="https://www.youtube.com/watch?v=PnK4gzO6S3Q" target="_blank">hac</a><a href="https://lioncityhacks.com/" target="_blank">kat</a><a href="https://photos.app.goo.gl/pd5MprLVn7ZDixv17" target="_blank">ho</a><a href="https://youtu.be/KLx4NZZPzMc" target="_blank">ns</a> 
+		<a href="https://www.youtube.com/watch?v=PnK4gzO6S3Q" target="_blank">ha</a><a href="https://lioncityhacks.com/" target="_blank">ck</a><a href="https://photos.app.goo.gl/pd5MprLVn7ZDixv17" target="_blank">at</a><a href="https://youtu.be/KLx4NZZPzMc" target="_blank">ho</a><a href="https://youtu.be/O1s5HqSqKi0" target="_blank">ns</a> 
 		and learning about random pieces of trivia. 
 	</p>
 	<p>
@@ -262,6 +262,7 @@
 	  display: grid;
 	  grid-template-columns: 1fr 1fr 1fr;
 	  gap: 8px;
+	  margin-top: 8px;
 	}
 	
 	@media screen and (max-width: 768px) {

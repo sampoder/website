@@ -30,6 +30,7 @@
     "@lukeed/uuid": "^2.0.0",
     "@mux/videojs-kit": "^0.7.0",
     "cookie": "^0.4.1",
+    "esbuild": "^0.19.5",
     "hls.js": "^1.1.1"
   }
 }
