@@ -62,7 +62,7 @@
 		and learning about random pieces of trivia. 
 	</p>
 	<p>
-		Here's are a couple of projects I'm proud of:
+		Here are a couple of projects I'm proud of:
 	</p>
 </section>
 <div class="grid-2">
