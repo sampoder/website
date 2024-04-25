@@ -1,21 +1,3 @@
-<script context="module" lang="ts">
-	export const prerender = false;
-	export async function load({ fetch }) {
-		let res = await fetch('https://scrapbook.hackclub.com/api/users/sampoder/');
-		if (res.ok) {
-			return {
-				props: {
-					items: (await res.json()).posts
-				}
-			};
-		}
-		return {
-			status: res.status,
-			error: new Error()
-		};
-	}
-</script>
-
 <script>
 	export let items = [];
 	import Video from '../components/video.svelte';
@@ -207,41 +189,32 @@
 	  </div>
 	</div>
 </div>
-<section style="margin-top: 36px;">
+<section style="margin-top: 48px;">
 	<p>
-		Here's what I've been up to recently (from my 
-		<a href="https://scrapbook.hackclub.com/about/" target="_blank">Scrapbook</a>):
+		Away from school I spend my time working with friends on 🏦&nbsp;HCB — a fiscal sponsorship platform built using Ruby on Rails. We give people the tools they need do incredible things in the real world: <a href="https://hackclub.com/fiscal-sponsorship/">hackclub.com/fiscal-sponsorship</a>.
 	</p>
-	{#each items.slice(0, amount) as item}
-		<div>
-			<p><b>{convertTimestampToDate(item?.postedAt)}</b></p>
-			<p>{@html formatText(item?.text)}</p>
-			<p class="attachments">
-				{#each item?.attachments.filter((a) => endsWithAny(imageFileTypes, a)) as attachment}
-					<!-- svelte-ignore a11y-missing-attribute -->
-					<img
-						class="post-image"
-						src={attachment}
-						style={generateWidthStyles(item?.attachments.length)}
-						loading="lazy"
-					/>
-				{/each}
-				{#each item?.attachments.filter((a) => endsWithAny(audioFileTypes, a)) as attachment}
-					<audio src={attachment} controls preload="metadata" />
-				{/each}
-				{#each item?.mux as attachment}
-					<Video mux={attachment} />
-				{/each}
-			</p>
-			<hr />
-		</div>
-	{/each}
-	You seem to have reached the end...
-	{#if amount < items.length}
-		<span class="load-more" on:click={handleClick}>show more</span>?
-	{:else}
-		have a great day :D
-	{/if}
+	<img src="https://cloud-fsxnl7984-hack-club-bot.vercel.app/0screenshot_2024-04-02_at_3.43.40___pm.png" width="100%" />
+	<p style="text-align: center">
+		<a href="https://changelog.hcb.hackclub.com/reimbursements-289630" target="_blank">
+			<i>We recently shipped our own version of Expensify!</i>
+		</a>
+	</p>
+	<p style="margin-top: 48px;">
+		I also enjoy exploring the Bay Area & California, here are some recent pictures of mine:
+	</p>
+</section>
+<div class="grid-3">
+	<img src="https://cloud-jj0e6qaid-hack-club-bot.vercel.app/5img_5486__2_.jpg" height="200px" width="100%" style="object-fit: cover;" />
+	<img src="https://cloud-jj0e6qaid-hack-club-bot.vercel.app/4img_5845.jpg" height="200px" width="100%" style="object-fit: cover;" />
+	<img src="https://cloud-jj0e6qaid-hack-club-bot.vercel.app/0img_4406.jpg" height="200px" width="100%" style="object-fit: cover;" />
+	<img src="https://cloud-jj0e6qaid-hack-club-bot.vercel.app/3img_5599.jpg" height="200px" width="100%" style="object-fit: cover;" />
+	<img src="https://cloud-jj0e6qaid-hack-club-bot.vercel.app/1img_4705.jpg" height="200px" width="100%" style="object-fit: cover;" />
+	<img src="https://cloud-gg3ftb4jw-hack-club-bot.vercel.app/0img_5368__1_.jpg" height="200px" width="100%" style="object-fit: cover;" />
+</div>
+<section>
+	<p style="margin-top: 48px;">
+		If you're ever in the area (say hi!), I'd recommend checking out Grotto Rock Park, Indian Rock Park, Twin Peaks, the Clark Kerr Fire Trails, and Dolores Park.
+	</p>
 </section>
 
 <style>
