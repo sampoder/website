@@ -6,6 +6,15 @@
 	<slot />
 </main>
 
+<div>
+	<div style="height: 8px; background: #ec3750;"></div>
+	<div style="height: 8px; background: #ff8c37;"></div>
+	<div style="height: 8px; background: #f1c40f;"></div>
+	<div style="height: 8px; background: #33d6a6;"></div>
+	<div style="height: 8px; background: #338eda;"></div>
+	<div style="height: 8px; background: #a633d6;"></div>
+</div>
+
 <style>
 	main {
 		flex: 1;

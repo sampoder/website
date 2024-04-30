@@ -32,11 +32,10 @@
 	<p>
 		<a href="https://github.com/sampoder" target="_blank">GitHub</a> ~
 		<a href="https://twitter.com/sam_poder" target="_blank">Twitter</a> ~
-		<a href="https://instagram.com/sam_poder/" target="_blank">Instagram</a> ~
-		<a href="https://social.dino.icu/@sampoder" target="_blank" rel="me">Mastodon</a>
+		<a href="https://instagram.com/sam_poder/" target="_blank">Instagram</a>
 	</p>
 	<p>
-		👋 G'day! My name is Sam. I'm an Australian who grew up in Singapore; nowadays, I'm living in the United States and learning all about computers at Berkeley. <i>{["Go bears!", "Roll on you bears!", "Hack yeah!"][Math.floor(Math.random() * 3)]}</i>
+		👋 G'day! My name is Sam. I'm an Australian who grew up in Singapore; nowadays, I live in California. I'm learning all about computers and languages at Berkeley. <i>{["Go bears!", "Roll on you bears!", "Hack yeah!"][Math.floor(Math.random() * 3)]}</i>
 	</p>
 	<p>
 		I enjoy making things (mostly involving code), running 
@@ -214,6 +213,11 @@
 <section>
 	<p style="margin-top: 48px;">
 		If you're ever in the area (say hi!), I'd recommend checking out Grotto Rock Park, Indian Rock Park, Twin Peaks, the Clark Kerr Fire Trails, and Dolores Park.
+	</p>
+</section>
+<section>
+	<p style="margin-top: 24px;">
+		More things of mine are on my GitHub, <a href="https://github.com/sampoder">@sampoder</a>. Feel free to email me about anything at sampoder [at] berkeley.edu.
 	</p>
 </section>
 

@@ -2,5 +2,9 @@
 
 :root {
 	font-family: "Roboto Mono", Menlo, monospace;
+}
 
+body {
+	padding: 0px;
+	margin: 0px;
 }
