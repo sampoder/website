@@ -1,22 +1,8 @@
 <script>
-	export let items = [];
-	import Video from '../components/video.svelte';
 	import Meta from '../components/meta.svelte';
-	import {
-		convertTimestampToDate,
-		formatText,
-		endsWithAny,
-		generateWidthStyles
-	} from '../lib/renderers';
-
-	const imageFileTypes = ['jpg', 'jpeg', 'png', 'gif'];
-
-	const audioFileTypes = ['mp3', 'wav', 'aiff', 'm4a'];
-
-	let amount = 25;
-
-	function handleClick() {
-		amount += 10;
+	import JSConfetti from 'js-confetti'
+	if(typeof document != "undefined") {
+		document.confetti = new JSConfetti()
 	}
 </script>
 
@@ -24,7 +10,7 @@
 
 <section style="margin-top: 72px;">
 	<div class="photo-and-name">
-		<img src="/pfp.jpg" alt="Me (Sam Poder)" />
+		<img src="/favicon.png" alt="Me (Sam Poder)" />
 		<div>
 			<h1>Sam Poder</h1>
 		</div>
@@ -35,10 +21,14 @@
 		<a href="https://instagram.com/sam_poder/" target="_blank">Instagram</a>
 	</p>
 	<p>
-		👋 G'day! My name is Sam. I'm an Australian who grew up in Singapore; nowadays, I live in California. I'm learning all about computers and languages at Berkeley. <i>{["Go bears!", "Roll on you bears!", "Hack yeah!"][Math.floor(Math.random() * 3)]}</i>
+		👋 G'day! My name is Sam. I'm an Australian who grew up in Singapore; nowadays, I live in California. 
+		I'm learning all about computers and languages at Berkeley. 
+		<i on:click={() => document.confetti.addConfetti({emojis: ['🧸', '🐻']})} class="pointer">
+			{["Go bears!", "Roll on you bears!", "Hack yeah!"][Math.floor(Math.random() * 3)]}
+		</i>
 	</p>
 	<p>
-		I enjoy making things (mostly involving code), running 
+		I enjoy making things (mostly involving code), playing soccer, running 
 		<a href="https://www.youtube.com/watch?v=PnK4gzO6S3Q" target="_blank">ha</a><a href="https://lioncityhacks.com/" target="_blank">ck</a><a href="https://photos.app.goo.gl/pd5MprLVn7ZDixv17" target="_blank">at</a><a href="https://youtu.be/KLx4NZZPzMc" target="_blank">ho</a><a href="https://youtu.be/O1s5HqSqKi0" target="_blank">ns</a> 
 		and learning about random pieces of trivia. 
 	</p>

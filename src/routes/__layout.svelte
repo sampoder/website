@@ -6,7 +6,7 @@
 	<slot />
 </main>
 
-<div>
+<div on:click={() => document.confetti.addConfetti({emojis: ['🌈', '🏳️‍🌈', '✨']})} class="pointer">
 	<div style="height: 8px; background: #ec3750;"></div>
 	<div style="height: 8px; background: #ff8c37;"></div>
 	<div style="height: 8px; background: #f1c40f;"></div>

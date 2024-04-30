@@ -8,3 +8,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 }
+
+.pointer {
+	cursor: pointer;
+}
