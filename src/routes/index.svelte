@@ -205,7 +205,7 @@
 </div>
 <section>
 	<p style="margin-top: 48px;">
-		If you're ever in the area (say hi!), I'd recommend checking out Grotto Rock Park, Indian Rock Park, Twin Peaks, the Clark Kerr Fire Trails, and Dolores Park.
+		If you're ever in the area (say hi!), I'd recommend checking out Grotto Rock Park, Albany Bulb, Twin Peaks, the Clark Kerr Fire Trails, and Dolores Park.
 	</p>
 </section>
 <section>
