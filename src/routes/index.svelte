@@ -180,7 +180,7 @@
 </div>
 <section style="margin-top: 48px;">
         <p>
-		At school, I'm a tutor for <a href="https://eecs70.org">CS70</a> (Berkeley's discrete mathematics and probability theory class). My office hours are 3pm to 5pm, every Friday in Cory 400. I also help organise <a href="https://calhacks.io">Cal Hacks</a> and co-teach the <a href="https://cubstart.com">Cubstart</a> DeCal on web development.
+		At school, I'm a TA for <a href="https://eecs70.org">CS70</a> (Berkeley's discrete mathematics and probability theory). I also help organise <a href="https://calhacks.io">Cal Hacks</a> and co-teach the <a href="https://cubstart.com">Cubstart</a> DeCal on web development.
 	</p>
 	<p>
 		Away from school I spend my time working with friends on 🏦&nbsp;HCB — a fiscal sponsorship platform built using Ruby on Rails. We give people the tools they need do incredible things in the real world: <a href="https://hackclub.com/fiscal-sponsorship/">hackclub.com/fiscal-sponsorship</a>.
