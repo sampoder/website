@@ -196,7 +196,7 @@
 		This summer, I'm moving to 🗽 New York City and interning at <a href="https://ambrook.com/about">Ambrook</a>! Ambrook builds financial tools that enable farms, ranches, and other industrial operations to become more sustainable and profitable.
 	</p>
 	<p>
-		At the end of the day though, the Bay Area is my home and I love exploring it and California; here are some recent pictures of mine:
+		At the end of the day though, the Bay Area is my home and I love exploring it; here are some recent pictures of mine:
 	</p>
 </section>
 <div class="grid-3">
