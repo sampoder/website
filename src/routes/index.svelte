@@ -30,7 +30,7 @@
 	<p>
 		I enjoy making things (mostly involving code), playing soccer, running 
 		<a href="https://www.youtube.com/watch?v=PnK4gzO6S3Q" target="_blank">ha</a><a href="https://lioncityhacks.com/" target="_blank">ck</a><a href="https://photos.app.goo.gl/pd5MprLVn7ZDixv17" target="_blank">at</a><a href="https://youtu.be/KLx4NZZPzMc" target="_blank">ho</a><a href="https://youtu.be/O1s5HqSqKi0" target="_blank">ns</a> 
-		and learning about random pieces of trivia. 
+		and adventuring on public transit.
 	</p>
 	<p>
 		Here are a couple of projects I'm proud of:
@@ -193,7 +193,7 @@
 		</a>
 	</p>
 	<p style="margin-top: 48px;">
-		This summer, I'm moving to 🗽 New York City and interning at <a href="https://ambrook.com/about">Ambrook</a>! Ambrook builds financial tools that enable farms, ranches, and other industrial operations to become more sustainable and profitable.
+		This summer, I'm living in 🗽 New York City and interning at <a href="https://ambrook.com/about">Ambrook</a>! I'll be building financial tools that enable farms, ranches, and other industrial operations to become more sustainable and profitable.
 	</p>
 	<p>
 		At the end of the day though, the Bay Area is my home and I love exploring it; here are some recent pictures of mine:
@@ -303,23 +303,23 @@
 	}
 	
 	.repo-container {
-	  border: 1px solid #e1e4e8;
-	  border-radius: 8px;
-	  margin-bottom: 0px;
-	  padding: 16px;
+		border: 1px solid #e1e4e8;
+		border-radius: 8px;
+		margin-bottom: 0px;
+		padding: 16px;
 	}
 	
 	.repo-header {
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-	  margin-bottom: 8px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 8px;
 	}
 	
 	.repo-name {
-	  font-size: 16px;
-	  color: #2f81f7!important;
-	  text-decoration: none;
+		font-size: 16px;
+		color: #2f81f7!important;
+		text-decoration: none;
 	}
 	
 	b {
@@ -327,9 +327,9 @@
 	}
 	
 	.repo-description {
-	  color: #586069;
-	  font-size: 14px;
-	  margin-bottom: 8px;
+		color: #586069;
+		font-size: 14px;
+		margin-bottom: 8px;
 	}
 	
 	.repo-stats {
