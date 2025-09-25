@@ -181,10 +181,10 @@
 </div>
 <section style="margin-top: 48px;">
         <p>
-		At school, I'm a TA for <a href="https://eecs70.org">CS70</a> (Berkeley's discrete mathematics and probability theory class). I also help organise <a href="https://calhacks.io">Cal Hacks</a> and co-teach the <a href="https://cubstart.com">Cubstart</a> DeCal on web development.
+		At school, I'm a Head TA for <a href="https://eecs70.org">CS70</a> (Berkeley's discrete mathematics and probability theory class). I also help organise <a href="https://calhacks.io">Cal Hacks</a> and co-teach the <a href="https://cubstart.com">Cubstart</a> DeCal on web development.
 	</p>
 	<p>
-		Away from school I spend my time working with friends on 🏦&nbsp;HCB — an <a href="https://github.com/hackclub/hcb">open source</a> fiscal sponsorship platform built using Ruby on Rails. We give people the tools they need do incredible things in the real world: <a href="https://hackclub.com/fiscal-sponsorship/">hackclub.com/fiscal-sponsorship</a>.
+		Away from school I spend my time working on 🏦&nbsp;HCB — an <a href="https://github.com/hackclub/hcb">open source</a> fiscal sponsorship platform built using Ruby on Rails. We give people the tools they need do incredible things in the real world: <a href="https://hackclub.com/fiscal-sponsorship/">hackclub.com/fiscal-sponsorship</a>.
 	</p>
 	<img src="https://cloud-fsxnl7984-hack-club-bot.vercel.app/0screenshot_2024-04-02_at_3.43.40___pm.png" width="100%" />
 	<p style="text-align: center">
