@@ -181,7 +181,7 @@
 </div>
 <section style="margin-top: 48px;">
     <p>
-		At school, I'm a Head TA for <a href="https://eecs70.org">CS70</a> (Berkeley's discrete mathematics and probability theory class). I help organise <a href="https://calhacks.io">Cal Hacks</a> and research programming tools in the <a href="https://plait-lab.org/">PLAIT Lab</a>.
+		At school, I'm a Head TA for <a href="https://eecs70.org">CS70</a> (Berkeley's discrete mathematics and probability theory class). I help organise <a href="https://calhacks.io">Cal Hacks</a> and research programming languages in the <a href="https://plait-lab.org/">PLAIT Lab</a>.
 	</p>
 	<p>
 		I work part-time at <a href="https://ambrook.com/about">Ambrook</a>; we build financial tools that enable farms, ranches, and other industrial operations to become more sustainable and profitable. I wrote a blog post about what I worked on over summer - <a href="https://ambrook.com/blog/company/in-the-weeds">check it out!</a>
@@ -189,7 +189,7 @@
 	<p>
 		And I maintain 🏦&nbsp;HCB — an <a href="https://github.com/hackclub/hcb">open source</a> fiscal sponsorship platform built using Ruby on Rails. We give people the tools they need do incredible things in the real world.
 	</p>
-	<img src="https://cloud-fsxnl7984-hack-club-bot.vercel.app/0screenshot_2024-04-02_at_3.43.40___pm.png" width="100%" />
+	<img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/7946c1e7e2c63f9d_screenshot_2024-04-02_at_3.43.40___pm.png" width="100%" />
 	<p style="text-align: center">
 		<a href="https://changelog.hcb.hackclub.com/reimbursements-289630" target="_blank">
 			<i>We recently shipped our own version of Expensify!</i>
@@ -200,12 +200,12 @@
 	</p>
 </section>
 <div class="grid-3">
-	<img src="https://cloud-jj0e6qaid-hack-club-bot.vercel.app/5img_5486__2_.jpg" height="200px" width="100%" style="object-fit: cover;" />
-	<img src="https://cloud-jj0e6qaid-hack-club-bot.vercel.app/4img_5845.jpg" height="200px" width="100%" style="object-fit: cover;" />
-	<img src="https://cloud-jj0e6qaid-hack-club-bot.vercel.app/0img_4406.jpg" height="200px" width="100%" style="object-fit: cover;" />
-	<img src="https://cloud-jj0e6qaid-hack-club-bot.vercel.app/3img_5599.jpg" height="200px" width="100%" style="object-fit: cover;" />
-	<img src="https://cloud-jj0e6qaid-hack-club-bot.vercel.app/1img_4705.jpg" height="200px" width="100%" style="object-fit: cover;" />
-	<img src="https://cloud-gg3ftb4jw-hack-club-bot.vercel.app/0img_5368__1_.jpg" height="200px" width="100%" style="object-fit: cover;" />
+	<img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/562e5cd549b36e34_img_5486__3_.jpg" height="200px" width="100%" style="object-fit: cover;" />
+	<img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/e4c9f35a60122385_img_5845__2_.jpg" height="200px" width="100%" style="object-fit: cover;" />
+	<img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/b4593f75a9f704d7_img_4947.jpg" height="200px" width="100%" style="object-fit: cover;" />
+	<img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/c293f3a097f19e99_img_0660.jpg" height="200px" width="100%" style="object-fit: cover;" />
+	<img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/3f4ef764091fcf6c_img_5599__1_.jpg" height="200px" width="100%" style="object-fit: cover;" />
+	<img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/e7d46a51b782db83_img_5368__2_.jpg" height="200px" width="100%" style="object-fit: cover;" />
 </div>
 <section>
 	<p style="margin-top: 48px;">
