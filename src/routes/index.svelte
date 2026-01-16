@@ -39,6 +39,16 @@
 <div class="grid-2">
 	<iframe 
 		height="300"
+		src="https://www.youtube.com/embed/3PD-vQbpwA8?si=-IlZsyrNwkkkCU5D&amp;start=2788" 
+		title="YouTube video player" 
+		frameborder="0" 
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		allowfullscreen
+		style="border-radius: 8px; width: 100%;"
+	></iframe>
+
+	<iframe 
+		height="300"
 		src="https://www.youtube.com/embed/CBxilReUkJ0?si=GgcQ9GDoqSl1avoK;start=3005" 
 		title="YouTube video player" 
 		frameborder="0" 
