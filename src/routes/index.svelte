@@ -216,7 +216,7 @@
 		</a>
 	</p>
 	<p>
-		I love exploring it the Bay Area, here are some favourite pictures of mine:
+		I love exploring the Bay Area, here are some favourite pictures of mine:
 	</p>
 </section>
 <div class="grid-3">
