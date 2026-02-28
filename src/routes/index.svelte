@@ -201,7 +201,10 @@
 </div>
 <section style="margin-top: 48px;">
     <p>
-		At school, I'm a Head TA for <a href="https://eecs70.org">CS70</a> (Berkeley's discrete mathematics and probability theory class). I also help organise <a href="https://calhacks.io">Cal Hacks</a>.
+		At school, I'm a Head TA for <a href="https://eecs70.org">CS70</a> (Berkeley's discrete mathematics and probability theory class). I also help organise <a href="https://calhacks.io">Cal Hacks</a> and research programming languages in the <a href="https://plait-lab.org/">PLAIT Lab</a>.
+	</p>
+	<p>
+		This summer, I'll be interning at ▲ Vercel in San Francisco. Afterwards I'll be returning to Berkeley to complete a fifth-year Masters in Computer Science.
 	</p>
 	<p>
 		I work part-time at <a href="https://ambrook.com/about">Ambrook</a>; we build financial tools that enable farms, ranches, and other industrial operations to become more sustainable and profitable. I wrote a blog post about what I worked on over summer - <a href="https://ambrook.com/blog/company/in-the-weeds">check it out!</a>
