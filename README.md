@@ -1,3 +1,1 @@
-# 🏡 website
-
-My personal site!
+[sampoder.com](https://sampoder.com)
