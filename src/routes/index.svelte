@@ -201,16 +201,13 @@
 </div>
 <section style="margin-top: 48px;">
     <p>
-		At school, I'm a Head TA for <a href="https://eecs70.org">CS70</a> (Berkeley's discrete mathematics and probability theory class). I also help organise <a href="https://calhacks.io">Cal Hacks</a> and do PL + HCI research in the <a href="https://plait-lab.org/">PLAIT Lab</a>.
+		I recently graduated from UC Berkeley with a B.A. in Computer Science and Linguistics. This year, I've returned to Berkeley to do a 4th-year Masters in EECS. I'm a Head TA for <a href="https://eecs70.org">CS70</a> (Berkeley's discrete mathematics and probability theory class). I also help organise <a href="https://calhacks.io">Cal Hacks</a>. In the past, I've done PL + HCI research in the <a href="https://plait-lab.org/">PLAIT Lab</a> and language revitalization work in the Linguistics department.
 	</p>
 	<p>
-		This summer, I'll be interning at ▲ Vercel on the Turbopack team in San Francisco. Afterwards I'll be returning to Berkeley to complete a fifth-year Masters in Computer Science.
+		This summer, I interned at ▲ Vercel on the Turbopack team in San Francisco. You can read about what I worked on in <a href="https://nextjs.org/blog/turbopack-chunking">this blog post on the Next.js site</a>. The summer prior, <a href="https://ambrook.com/blog/company/in-the-weeds">I worked at Ambrook</a> on financial tools that enable farms, ranches, and other industrial operations to become more sustainable and profitable.
 	</p>
 	<p>
-		I work part-time at <a href="https://ambrook.com/about">Ambrook</a>; we build financial tools that enable farms, ranches, and other industrial operations to become more sustainable and profitable. I wrote a blog post about what I worked on last summer - <a href="https://ambrook.com/blog/company/in-the-weeds">check it out!</a>
-	</p>
-	<p>
-		And I maintain 🏦&nbsp;HCB — an <a href="https://github.com/hackclub/hcb">open source</a> fiscal sponsorship platform built using Ruby on Rails. We give people the tools they need do incredible things in the real world.
+		In the past, <a href="https://www.youtube.com/watch?v=PnK4gzO6S3Q">I ran events at Hack Club</a> and maintained 🏦&nbsp;HCB — an <a href="https://github.com/hackclub/hcb">open source</a> fiscal sponsorship platform built using Ruby on Rails.
 	</p>
 	<p>
 		I love exploring the Bay Area, here are some favourite pictures of mine:
