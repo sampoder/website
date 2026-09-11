@@ -207,7 +207,7 @@
 		This summer, I interned at ▲ Vercel on the Turbopack team in San Francisco. I wrote <a href="https://nextjs.org/blog/turbopack-chunking">a blog post</a> about everything I worked on! The summer prior, <a href="https://ambrook.com/blog/company/in-the-weeds">I worked at Ambrook</a> on financial tools that enable farms to become more sustainable.
 	</p>
 	<p>
-		In the past, <a href="https://www.youtube.com/watch?v=PnK4gzO6S3Q">I ran events at Hack Club</a> and maintained 🏦&nbsp;HCB — an <a href="https://github.com/hackclub/hcb">open source</a> fiscal sponsorship platform built using Ruby on Rails.
+		In the past, <a href="https://www.youtube.com/watch?v=PnK4gzO6S3Q">I ran events at Hack Club</a> and maintained 🏦&nbsp;HCB — an <a href="https://github.com/hackclub/hcb">open source</a> fiscal sponsorship platform.
 	</p>
 	<p>
 		I love exploring the Bay Area, here are some favourite pictures of mine:
