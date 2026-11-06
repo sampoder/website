@@ -210,7 +210,7 @@
 		I interned at ▲ Vercel on the Turbopack team in San Francisco last summer. I wrote <a href="https://nextjs.org/blog/turbopack-chunking">a blog post</a> about everything I worked on! The summer prior, <a href="https://ambrook.com/blog/company/in-the-weeds">I worked at Ambrook</a> on financial tools that enable farms to become more sustainable.
 	</p>
 	<p>
-		After graduating, I’ll be returning to ▲ Vercel as a Member of Technical Staff on the Turbopack team.
+		After graduating, I’ll be returning to ▲ Vercel and working on the Turbopack team.
 	</p>
 	<p>
 		I love exploring the Bay Area, here are some favourite pictures of mine:
